@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -48,6 +49,11 @@ public class Formy
 			
 			WebElement sexMale = driver.findElement(By.xpath("//input[@id='checkbox-1']"));
 			sexMale.click();
+			
+			WebElement yearsOfExp = driver.findElement(By.id("select-menu"));
+			Select selectAnVal = new Select(yearsOfExp);
+			selectAnVal.selectByValue("3");
+			
 			
 			WebElement datePicker = driver.findElement(By.cssSelector("#datepicker"));
 			datePicker.sendKeys("03/08/2022");

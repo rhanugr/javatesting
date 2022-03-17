@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="basic.automation.topic.to.learn.Formy">
+      <class name="basic.automation.topic.to.learn.DragDropTest">
         <methods>
-          <include name="formyTest"/>
+          <include name="dragDropTest"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- basic.automation.topic.to.learn.Formy -->
+      </class> <!-- basic.automation.topic.to.learn.DragDropTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
